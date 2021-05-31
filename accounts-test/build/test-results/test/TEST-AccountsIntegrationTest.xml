@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AccountsIntegrationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-05-15T00:13:25" hostname="Matts-Air-4.student.uod.otago.ac.nz" time="5.96">
+  <properties/>
+  <testcase name="testCreateAccount()" classname="AccountsIntegrationTest" time="5.158"/>
+  <testcase name="testUpdateAccount()" classname="AccountsIntegrationTest" time="0.247"/>
+  <testcase name="testGetAllAccounts()" classname="AccountsIntegrationTest" time="0.109"/>
+  <testcase name="testDeleteAccount()" classname="AccountsIntegrationTest" time="0.209"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
