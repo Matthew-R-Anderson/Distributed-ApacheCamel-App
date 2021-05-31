@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="CustomerCreator">    
+    <head>
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-resource.min.js"></script>
+        <script src="js/customercreator.js"></script>
+        <title>Create Customer</title>
+<!--        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    </head>
+    <body>
+        
+        <div ng-controller = "CustomerController as custCtrl">
+            <form ng-submit="custCtrl.createAccount(Customer)">
+                <label>Email:</label>
+                <input type="text" ng-model="Customer.email"><br>
+                <label>Username:</label>
+                <input type="text" ng-model="Customer.username"><br>
+                <label>Firstname:</label>
+                <input type="text" ng-model="Customer.firstName"><br>
+                <label>Lastname:</label>
+                <input type="text" ng-model="Customer.lastName"><br>
+                <button type="submit">Create Customer</button>
+            </form>   
+        </div>
+        
+<!--        <div ng-controller="CustomerController as custCtrl">
+            <h1>All Customers</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Email</th>
+                        <th>Username</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Group</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="customer in custCtrl.customers">
+                        <td>{{customer.id}}</td>
+                        <td>{{customer.email}}</td>
+                        <td>{{customer.username}}</td>
+                        <td>{{customer.firstName}}</td>
+                        <td>{{customer.lastName}}</td>
+                        <td>{{customer.group}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+-->       
+<!--<div>
+            <h1>Add a New Customer</h1>
+            <fieldset>
+                <legend>Enter Your Details</legend>
+                <form ng-submit="custCtrl.createCustomer(customer)">
+                    <label>Email:</label>
+                    <input type="text" ng-model="customer.email">
+                    <label>Username:</label>
+                    <input type="text" ng-model="customer.username">
+                    <label>First Name:</label>
+                    <input type="text" ng-model="customer.firstName">
+                    <label>Last Name:</label>
+                    <input type="text" ng-model="customer.lastName">
+                    <button type="submit">Submit</button>
+                </form>
+            </fieldset>
+        </div>-->
+    </body>
+</html>
